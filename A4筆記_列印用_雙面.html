@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="utf-8">
+<title>近代物理 A4 筆記（雙面）</title>
+<link rel="stylesheet" href="assets/katex/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  html,body{background:#fff!important;margin:0;padding:0}
+  .wrap{max-width:none;padding:0!important}
+  .a4{box-shadow:none!important;margin:0 auto!important}
+  @media print{@page{size:A4 portrait;margin:0}}
+</style>
+</head><body>
+<div class="wrap" id="host"></div>
+<script src="js/data/sheet_data.js"></script>
+<script src="assets/katex/katex.min.js"></script>
+<script src="assets/katex/contrib/auto-render.min.js"></script>
+<script src="js/render.js"></script>
+<script>
+var PAGES = [{head:"近代物理 期中考 A4 筆記",side:"正面",sub:"Beiser《Concepts of Modern Physics》Ch1–Ch6　·　考前最後掃描用（雙面版 · 1/2）",items:SHEET_FRONT,extras:[SHEET_BOX_CONST]},{head:"近代物理 期中考 A4 筆記",side:"背面",sub:"Beiser《Concepts of Modern Physics》Ch1–Ch6　·　考前最後掃描用（雙面版 · 2/2）",items:SHEET_BACK,extras:[SHEET_BOX_ERR]}];
+document.getElementById('host').innerHTML = sheetHTML(PAGES);
+typeset(document.getElementById('host'));
+document.title = '近代物理 A4 筆記（雙面）';
+</script>
+</body></html>
